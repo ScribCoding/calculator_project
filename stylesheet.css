@@ -1,3 +1,10 @@
+@font-face {
+    font-family: digital;
+    src: url(DS-DIGIB.TTF);
+  }
+
+
+
 #calculator_body{
     position:absolute;
     margin-left: 50%;
@@ -15,13 +22,20 @@
 #display_container{
     grid-column: span 4;
     grid-row: zero;
+    min-height: 50px;
     
 }
 
-#display{
-    max-width: 95%;
-    font-size: 40px;
+#equation_display{
+    height: 50px;
+    max-width: 100%;
+    font-size: 60px;
+    font-family: digital;
     text-align: end;
+    overflow:hidden;
+    padding: 5px;
+    margin-top: 20px;
+    
 }
 
 
