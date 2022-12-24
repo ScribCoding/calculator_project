@@ -1,0 +1,28 @@
+#calculator_body{
+    position:absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    display: inline-grid;
+    background-color: pink;
+    grid-template-columns: [zero] 100px [one] 100px [two] 100px [three] 100px;
+    grid-template-rows: [zero] 100px [one] 100px [two] 100px [three] 100px [four] 100px [five] 100px;
+}
+
+.border{
+    border: solid 3px;
+}
+
+#display_container{
+    grid-column: span 4;
+    grid-row: zero;
+    
+}
+
+#display{
+    max-width: 95%;
+    font-size: 40px;
+    text-align: end;
+}
+
+
+
