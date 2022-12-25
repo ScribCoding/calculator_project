@@ -30,7 +30,7 @@
     width: 200px;
     height: 200px;
     position: relative;
-    z-index: -1;
+    z-index:0;
     left: -100px;
     top: -820px;
 }
@@ -39,7 +39,7 @@
     width: 200px;
     height: 200px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     right: -200px;
     top: -820px;
     
@@ -53,7 +53,7 @@
     justify-content: center;
     position:absolute;
     padding-top: 50px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 40%;
     margin-right: 50%;
     display: inline-grid;
@@ -106,6 +106,9 @@ html, body{
     margin: 0px;
     height: 100%;
     width: 100%;
+    background-image: url(background.png);
+
+
 }
 
 #clear{
