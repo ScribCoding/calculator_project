@@ -1,18 +1,65 @@
+
 @font-face {
     font-family: digital;
     src: url(DS-DIGIB.TTF);
   }
 
+@font-face {
+    font-family: space;
+    src: url(Space\ Adventure.ttf);
+  }
 
+@keyframes scrib_color_change{
+    0% {
+        color: #fa2656;
+    }
+
+    33%{
+        color: #ffaa2c;
+    }
+
+    66%{
+        color: #1a8fff;
+    }
+
+    100%{
+        color:#fa2656;
+    }
+}
+#left_ear{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: -1;
+    left: -100px;
+    top: -820px;
+}
+
+#right_ear{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: -1;
+    right: -200px;
+    top: -820px;
+    
+}
 
 #calculator_body{
+    border-radius: 2em;
+    border: solid 12px;
+    height: 625px;
+    width: 500px;
+    justify-content: center;
     position:absolute;
-    margin-left: 50%;
+    padding-top: 50px;
+    margin-top: 15%;
+    margin-left: 40%;
     margin-right: 50%;
     display: inline-grid;
-    background-color: pink;
+    background-color: #ededed;
     grid-template-columns: [zero] 100px [one] 100px [two] 100px [three] 100px;
-    grid-template-rows: [zero] 100px [one] 100px [two] 100px [three] 100px [four] 100px [five] 100px;
+    grid-template-rows: [zero] 100px [one] 100px [two] 100px [three] 100px [four] 100px [five] 100px [six] 500px;
 }
 
 .border{
@@ -27,6 +74,11 @@
 }
 
 #equation_display{
+    animation: scrib_color_change;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+    border-radius: 2em;
     height: 50px;
     max-width: 100%;
     font-size: 60px;
@@ -34,9 +86,35 @@
     text-align: end;
     overflow:hidden;
     padding: 5px;
-    margin-top: 20px;
+    padding-right: 15px;
+    margin: 20px 0px 30px;
+    background-color: black;
     
 }
 
+button:hover {
+    transition-duration: 0.5s;
+    background-color:black;
+}
 
+button:current{
+    background-color: green;
+}
+
+
+html, body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#clear{
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: -135px;
+    z-index: 3;
+    font-family: space;
+    color:#ffaa2c;
+}
 
