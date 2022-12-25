@@ -21,7 +21,7 @@ calculator_container.appendChild(right_ear);
 
 //ROW-CLEAR-START--------------------------------------------------
 const row_six = ['clear'];
-const row_six_icons = ['/calculator_icons/clear.png'];
+const row_six_icons = ['calculator_icons/clear.png'];
 let button = document.createElement('BUTTON');
 button.setAttribute('id', "clear");
 button.setAttribute('value', row_six[0]);
@@ -32,7 +32,7 @@ display_container.appendChild(button);
 //row zero
 //ROW-ONE-START--------------------------------------------------
 const row_one = ['1', '2', '3', '+'];
-const row_one_icons=['/calculator_icons/1.png','/calculator_icons/2.png','/calculator_icons/3.png','/calculator_icons/add.png'];
+const row_one_icons=['calculator_icons/1.png','calculator_icons/2.png','calculator_icons/3.png','calculator_icons/add.png'];
 
 for (let i = 0; i<row_one.length; i++){
 let button = document.createElement('BUTTON');
@@ -50,7 +50,7 @@ calculator_container.appendChild(button);
 
 //ROW-TWO-START--------------------------------------------------
 const row_two = ['4', '5', '6', '-'];
-const row_two_icons=['/calculator_icons/4.png','/calculator_icons/5.png','/calculator_icons/6.png','/calculator_icons/minus.png'];
+const row_two_icons=['calculator_icons/4.png','calculator_icons/5.png','calculator_icons/6.png','calculator_icons/minus.png'];
 for (let i = 0; i<row_two.length; i++){
 let button = document.createElement('BUTTON');
 button.setAttribute('id', row_two[i]);
@@ -67,7 +67,7 @@ calculator_container.appendChild(button);
 
 //ROW-THREE-START--------------------------------------------------
 const row_three = ['7', '8', '9', '*'];
-const row_three_icons=['/calculator_icons/7.png','/calculator_icons/8.png','/calculator_icons/9.png','/calculator_icons/multiply.png'];
+const row_three_icons=['calculator_icons/7.png','calculator_icons/8.png','calculator_icons/9.png','calculator_icons/multiply.png'];
 for (let i = 0; i<row_three.length; i++){
 let button = document.createElement('BUTTON');
 button.setAttribute('id', row_three[i]);
@@ -85,7 +85,7 @@ calculator_container.appendChild(button);
 
 //ROW-FOUR-START--------------------------------------------------
 const row_four = ['0', '.', 'x^y', '/'];
-const row_four_icons = ['/calculator_icons/0.png','/calculator_icons/decimal.png','/calculator_icons/exponent.png','/calculator_icons/divide.png'];
+const row_four_icons = ['calculator_icons/0.png','calculator_icons/decimal.png','calculator_icons/exponent.png','calculator_icons/divide.png'];
 for (let i = 0; i<row_four.length; i++){
 let button = document.createElement('BUTTON');
 button.setAttribute('id', row_four[i]);
@@ -103,7 +103,7 @@ calculator_container.appendChild(button);
 
 //ROW-FIVE-START--------------------------------------------------
 const row_five = ['remainder', '%', '√', '='];
-const row_five_icons = ['/calculator_icons/remainder.png','/calculator_icons/percent.png','/calculator_icons/square_root.png','/calculator_icons/equal.png'];
+const row_five_icons = ['calculator_icons/remainder.png','calculator_icons/percent.png','calculator_icons/square_root.png','calculator_icons/equal.png'];
 for (let i = 0; i<row_five.length; i++){
 let button = document.createElement('BUTTON');
 button.setAttribute('id', row_five[i]);
